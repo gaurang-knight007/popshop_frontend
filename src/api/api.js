@@ -1,8 +1,7 @@
-// src/api/api.js
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000', // or use your IP if testing on mobile
+  baseURL: 'http://localhost:5000',
 });
 
 API.interceptors.request.use((config) => {
