@@ -12,8 +12,11 @@ import CreateRequest from './pages/CreateRequest';
 import NearbyRequests from './pages/NearbyRequests';
 import ViewResponses from './pages/ViewResponses';
 import MyRequests from './pages/MyRequests';
-import Profile from './pages/Profile';
+//import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
+
+//<Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+
 
 const App = () => {
   return (
@@ -23,8 +26,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
-        <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
         <Route path="/buyer-dashboard" element={<ProtectedRoute><BuyerDashboard /></ProtectedRoute>} />
         <Route path="/shopkeeper-dashboard" element={<ProtectedRoute><ShopkeeperDashboard /></ProtectedRoute>} />
         <Route path="/create-request" element={<ProtectedRoute><CreateRequest /></ProtectedRoute>} />
