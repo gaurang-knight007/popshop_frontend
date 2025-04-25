@@ -18,9 +18,9 @@ const Login = () => {
       const res = await axios.post('/api/auth/login', formData);
       setAuthData(res.data.token, res.data.user);
       if (res.data.user.role === 'buyer') {
-        navigate('/profile');
+        navigate('/buyer-dashboard');
       } else {
-        navigate('/profile');
+        navigate('/shopkeeper-dashboard');
       }
     } catch (err) {
       if (err.response) {
