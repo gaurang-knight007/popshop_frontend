@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://popshop-qjw2.onrender.com',
+  baseURL: 'https://popshop-com.onrender.com',
 });
 
 API.interceptors.request.use((config) => {
